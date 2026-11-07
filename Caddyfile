@@ -1,0 +1,23 @@
+{
+    admin off
+    persist_config off
+    auto_https off
+
+    log {
+        format json
+        output stderr
+        level INFO
+    }
+
+    frankenphp
+}
+
+:{$PORT:8080} {
+    root * /app/public
+    encode zstd br gzip
+    file_server {
+        hide .git
+        hide .env*
+    }
+    php_server
+}
