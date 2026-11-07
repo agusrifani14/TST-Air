@@ -1,5 +1,47 @@
 # Environment
 .env
+.env.*
+!.env.example
+
+# Composer dependencies installed by Railway
+/vendor/
+
+# Railway build context
+!.dockerignore
+
+# Local dependency directory
+/vendor/
+
+# Git metadata
+.git/
+.github/
+
+# Local runtime files
+/writable/cache/*
+!/writable/cache/index.html
+!/writable/cache/.gitkeep
+/writable/debugbar/*
+!/writable/debugbar/index.html
+!/writable/debugbar/.gitkeep
+/writable/logs/*
+!/writable/logs/index.html
+!/writable/logs/.gitkeep
+/writable/session/*
+!/writable/session/index.html
+!/writable/session/.gitkeep
+/writable/uploads/*
+!/writable/uploads/index.html
+!/writable/uploads/.gitkeep
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Legacy duplicate rules below retained for compatibility
+# Environment
+.env
 
 # CodeIgniter Writable
 /writable/cache/*

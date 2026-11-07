@@ -1,0 +1,25 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Source control and editor metadata
+.git
+.gitignore
+.github
+.vscode
+.idea
+
+# Local runtime files
+writable/cache/*
+writable/debugbar/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+
+# Dependencies installed by Railpack Composer step
+vendor
+
+# OS files
+.DS_Store
+Thumbs.db
